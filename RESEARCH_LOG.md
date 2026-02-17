@@ -1,42 +1,47 @@
 # Trading Bot Research Log
 
-## 🚨 NEW BREAKTHROUGH: PARABOLIC SAR!
+## 🚨 CURRENT BEST: PARABOLIC SAR 0.055
 
-### Test Results (PSAR 0.04, 10% SL, 26% TP)
+### Test Results (PSAR 0.055, 10% SL, 26% TP)
 
-| Coin | SMA 24/56 | PSAR 0.04 | Improvement |
-|------|------------|-----------|-------------|
-| UNI | +31.6% | +503.6% | **+16x** |
-| CRV | +39.6% | +410.1% | **+10x** |
-| DOT | +30.2% | +345.3% | **+11x** |
-| SUI | +46.1% | +365.4% | **+8x** |
-| AAVE | +54.3% | +308.4% | **+6x** |
-| APT | +53.9% | +436.6% | **+8x** |
-| ARB | +71.1% | +354.0% | **+5x** |
+| Coin | PSAR Return |
+|------|-------------|
+| UNI | +621% |
+| CRV | +403% |
+| APT | +478% |
+| ARB | +454% |
+| SOL | +355% |
+| ETH | +250% |
 
-**PORTFOLIO AVERAGE: +360% vs +47% (SMA)!**
+**PORTFOLIO AVERAGE: +427%**
 
 ---
 
 ## What Works
-- **Parabolic SAR** 🚨 NEW CHAMPION!
-- Simple SMA crossover (24/56)
+- **Parabolic SAR 0.055** 🚨 CHAMPION!
+- Simple SMA crossover (24/56) - good baseline
 
-## What Doesn't Work
-- RSI
-- MACD
-- Bollinger Bands
-- Supertrend
-- ATR-based stops
-- Volume filters
+## What Doesn't Work (Tested)
+- RSI - ❌
+- MACD - ❌
+- Bollinger Bands - ❌
+- Supertrend - ❌ (+44% only)
+- ATR-based stops - ❌
+- Volume filters - ❌
+- EMA - ❌
+- Time exits - ❌
+- Dual timeframe - ❌
+- Fair Value Gaps (FVG) - ❌ (+69%)
+- TradingView indicators - ❌
 
-## Top Coins (PSAR)
+---
+
+## Top Coins (PSAR 0.055)
 | Coin | Return |
 |------|--------|
-| UNI | +451% |
-| CRV | +344% |
-| APT | +359% |
-| ARB | +337% |
-| SUI | +292% |
-| DOT | +269% |
-| RUNE | +178% |
+| UNI | +621% |
+| CRV | +403% |
+| APT | +478% |
+| ARB | +454% |
+| SOL | +355% |
+| ETH | +250% |
