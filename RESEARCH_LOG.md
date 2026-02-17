@@ -45,15 +45,41 @@
 
 ---
 
+## Iteration 3 (2026-02-17)
+
+### Research Done
+1. ✅ Built Version 1 (Simple SMA 10/30)
+2. ✅ Built Version 2 (Advanced: RSI + Volume + ATR + Multi-TF)
+3. ✅ Head-to-head comparison on multiple coins
+
+### Key Findings
+
+| Version | Description | ETH | BTC | Average |
+|---------|-------------|-----|-----|---------|
+| V1 | Simple SMA(10/30) + 10% SL + 20% TP | +22.9% | +13.4% | **+18.15%** |
+| V2 | Advanced: RSI filter + ATR stops + Volume | +18.3% | +4.8% | +11.58% |
+
+### Conclusion
+- **VERSION 1 (SIMPLE) WINS!**
+- The advanced filters actually hurt performance
+- Simpler = better for this market conditions
+
+---
+
 ## Current Best Settings
-- Coin: ETH
-- Indicator: SMA(10/30) crossover
-- Stop Loss: 10%
-- Take Profit: 20%
-- Backtest Return: ~+24%
+- **Strategy:** Version 1 (Simple SMA 10/30)
+- **Coin:** ETH
+- **Indicator:** SMA(10/30) crossover
+- **Stop Loss:** 10%
+- **Take Profit:** 20%
+- **Backtest Return:** ~+18-23%
+
+## Paper Trading Status
+- ✅ Active via cron job (hourly)
+- ✅ Using live ETH price data
+- ✅ Paper trading only (no real money)
 
 ## Next Steps (Future Iterations)
-- [ ] Test different coin pairs (SOL, DOT, etc.)
-- [ ] Add trend confirmation (price above 200 MA)
-- [ ] Test trailing stops
-- [ ] Test MACD confirmation
+- [ ] Test on more coins (SOL, etc.)
+- [ ] Try different timeframes
+- [ ] Consider going live with small amount
