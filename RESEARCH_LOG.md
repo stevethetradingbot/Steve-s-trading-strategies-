@@ -1,18 +1,30 @@
 # Trading Bot Research Log
 
-## Current Best Strategy
+## Current Best
+- **Strategy**: SMA 24/56, 10% SL, 26% TP
+- **Best Coin**: ARB at +71.1%
+- **Top Coins**: ARB > APT > SOL > ETH > OP > BTC
 
-| Coin | SMA | SL | TP | Return |
-|------|-----|----|----|--------|
-| SOL | 24/56 | 10% | 26% | +49.8% |
-| ETH | 18/45 | 10% | 26% | +51.2% |
-| LINK | 22/50 | 10% | 26% | +38.4% |
+## Coin Rankings (SMA 24/56 10/26)
+| Coin | Return |
+|------|--------|
+| ARB | +71.1% |
+| APT | +53.9% |
+| SOL | +49.8% |
+| ETH | +44.8% |
+| OP | +25.9% |
+| BTC | +22.6% |
+| NEAR | +21.7% |
+| INJ | +13.7% |
+| RENDER | +8.7% |
 
-**Portfolio Average: +46.5%**
+## What Works
+- Simple SMA crossover
+- 24/56 periods
+- 10% SL / 26% TP
 
----
-
-## Journey
-- Started: SMA 10/30 = +18%
-- Optimized: SMA 24/56 = +39%
-- Multi-coin: +46.5%
+## What Doesn't Work
+- Trailing stops
+- Volume filters
+- EMA
+- Time exits
