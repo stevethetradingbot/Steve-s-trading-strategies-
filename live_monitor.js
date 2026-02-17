@@ -13,7 +13,7 @@ const CURRENCY = "USD";
 const SMA_FAST = 24;
 const SMA_SLOW = 56;
 const STOP_LOSS_PCT = 10;
-const TAKE_PROFIT_PCT = 24;
+const TAKE_PROFIT_PCT = 26;
 
 // State file for position tracking
 const STATE_FILE = '/home/matthewkania.mk/.openclaw/workspace/trading_bot/paper_state.json';
