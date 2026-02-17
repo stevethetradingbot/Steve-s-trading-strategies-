@@ -1,62 +1,46 @@
 # Trading Bot Research Log
 
-## 🚨 CURRENT BEST: PARABOLIC SAR 0.07
+## 🚨 BREAKTHROUGH: DAILY TIMEFRAME!
 
-### Portfolio Average: +524%
+## Timeframe Comparison (PSAR 0.07)
 
----
-
-## PSAR AF Optimization
-
-| AF | Return |
-|----|--------|
-| 0.045 | +422% |
-| 0.05 | +460% |
-| 0.055 | +503% |
-| 0.06 | +488% |
-| **0.065** | **+556%** |
-| **0.07** | **+612%** |
+| Timeframe | Average Return |
+|-----------|----------------|
+| **1D (Daily)** | **+1,341%** |
+| 1H (Hourly) | +524% |
+| 4H | +120% |
 
 ---
 
-## Top Coins (PSAR 0.07)
+## Daily Top Coins
 | Coin | Return |
 |------|--------|
-| UNI | +780% |
-| SNX | +638% |
-| OP | +598% |
-| NEAR | +537% |
-| SUI | +568% |
-| AAVE | +410% |
-| SOL | +357% |
-| ETH | +301% |
+| ARB | +2095% |
+| APT | +1980% |
+| SOL | +1609% |
+| AVAX | +1393% |
+| CRV | +1387% |
+| NEAR | +1386% |
+| OP | +1535% |
+| ETH | +1000%+ |
 
 ---
 
 ## All Indicators Tested
 
-| Indicator | Return | vs PSAR |
-|----------|--------|---------|
-| **PSAR 0.07** | **+524%** | 🥇 |
-| PSAR 0.055 | +427% | ❌ |
-| Heikin-Ashi | +274% | ❌ |
-| SMA 24/56 | +47% | ❌ |
-| Trend Ribbon | +50% | ❌ |
-| FVG | +69% | ❌ |
-| Supertrend | +44% | ❌ |
-| VWAP | +27% | ❌ |
-| MACD | +26% | ❌ |
-| RSI | +10% | ❌ |
-| ZigZag | +6% | ❌ |
-| Bollinger Bands | +16% | ❌ |
-| Stochastic | -2% | ❌ |
+| Indicator | Return |
+|----------|--------|
+| **PSAR 0.07 Daily** | **+1,341%** |
+| PSAR 0.07 Hourly | +524% |
+| PSAR 0.055 Hourly | +427% |
+| Heikin-Ashi | +274% |
+| SMA 24/56 | +47% |
+| Trend Ribbon | +50% |
+| FVG | +69% |
+| Supertrend | +44% |
 
 ---
 
 ## Conclusion
 
-**Parabolic SAR AF=0.07 is the ultimate strategy!**
-
-- +524% average return
-- Beats every TradingView indicator
-- Simple and effective
+**Daily timeframe PSAR 0.07 is the ultimate strategy!**
