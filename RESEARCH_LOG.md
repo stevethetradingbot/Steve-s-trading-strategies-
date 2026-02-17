@@ -33,3 +33,6 @@
 - Volume filters
 - EMA
 - Time exits
+- ATR-based stops
+- Dual timeframe filters
+- All SL/TP variations (10/26 still best)
