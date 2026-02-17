@@ -10,8 +10,8 @@ const fs = require('fs');
 
 const COIN = "ETH";
 const CURRENCY = "USD";
-const SMA_FAST = 22;
-const SMA_SLOW = 55;
+const SMA_FAST = 24;
+const SMA_SLOW = 56;
 const STOP_LOSS_PCT = 10;
 const TAKE_PROFIT_PCT = 24;
 
