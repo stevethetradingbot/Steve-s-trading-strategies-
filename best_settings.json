@@ -1,9 +1,9 @@
 {
   "coin": "ETH",
-  "strategy": "SMA(20/50)",
-  "stopLoss": 10,
-  "takeProfit": 20,
-  "expectedReturn": "32.8%",
-  "testedCoins": ["ETH", "BTC", "SOL", "DOT"],
+  "strategy": "SMA(18/45)",
+  "stopLoss": 12,
+  "takeProfit": 26,
+  "expectedReturn": "30.6%",
+  "testedCoins": ["ETH", "BTC", "SOL"],
   "updated": "2026-02-17"
 }
