@@ -10,10 +10,10 @@ const fs = require('fs');
 
 const COIN = "ETH";
 const CURRENCY = "USD";
-const SMA_FAST = 18;
-const SMA_SLOW = 45;
-const STOP_LOSS_PCT = 12;
-const TAKE_PROFIT_PCT = 26;
+const SMA_FAST = 22;
+const SMA_SLOW = 55;
+const STOP_LOSS_PCT = 10;
+const TAKE_PROFIT_PCT = 24;
 
 // State file for position tracking
 const STATE_FILE = '/home/matthewkania.mk/.openclaw/workspace/trading_bot/paper_state.json';
