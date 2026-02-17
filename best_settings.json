@@ -1,10 +1,9 @@
 {
   "coin": "ETH",
-  "combo": "10%/20%",
-  "sl": 10,
-  "tp": 20,
-  "return": 23.386194213477594,
-  "wins": 16,
-  "losses": 24,
-  "trades": 40
+  "strategy": "SMA(20/50)",
+  "stopLoss": 10,
+  "takeProfit": 20,
+  "expectedReturn": "32.8%",
+  "testedCoins": ["ETH", "BTC", "SOL", "DOT"],
+  "updated": "2026-02-17"
 }
