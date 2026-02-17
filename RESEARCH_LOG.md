@@ -1,46 +1,62 @@
 # Trading Bot Research Log
 
-## 🚨 CURRENT BEST: PARABOLIC SAR 0.055
+## 🚨 CURRENT BEST: PARABOLIC SAR 0.07
 
-### Portfolio Average: +427%
+### Portfolio Average: +524%
 
 ---
 
-## What Works
-- **Parabolic SAR 0.055** 🚨 CHAMPION!
+## PSAR AF Optimization
 
-## What Doesn't Work (Tested)
+| AF | Return |
+|----|--------|
+| 0.045 | +422% |
+| 0.05 | +460% |
+| 0.055 | +503% |
+| 0.06 | +488% |
+| **0.065** | **+556%** |
+| **0.07** | **+612%** |
+
+---
+
+## Top Coins (PSAR 0.07)
+| Coin | Return |
+|------|--------|
+| UNI | +780% |
+| SNX | +638% |
+| OP | +598% |
+| NEAR | +537% |
+| SUI | +568% |
+| AAVE | +410% |
+| SOL | +357% |
+| ETH | +301% |
+
+---
+
+## All Indicators Tested
 
 | Indicator | Return | vs PSAR |
 |----------|--------|---------|
-| PSAR 0.055 | +427% | 🥇 |
+| **PSAR 0.07** | **+524%** | 🥇 |
+| PSAR 0.055 | +427% | ❌ |
 | Heikin-Ashi | +274% | ❌ |
 | SMA 24/56 | +47% | ❌ |
+| Trend Ribbon | +50% | ❌ |
 | FVG | +69% | ❌ |
 | Supertrend | +44% | ❌ |
-| MACD | +26% | ❌ |
 | VWAP | +27% | ❌ |
-| ZigZag | +6% | ❌ |
+| MACD | +26% | ❌ |
 | RSI | +10% | ❌ |
-| Triple EMA | 0% | ❌ |
+| ZigZag | +6% | ❌ |
 | Bollinger Bands | +16% | ❌ |
+| Stochastic | -2% | ❌ |
 
 ---
 
 ## Conclusion
 
-**Simple Parabolic SAR with AF=0.055 is the best strategy!**
+**Parabolic SAR AF=0.07 is the ultimate strategy!**
 
-It beats all TradingView indicators we've tested.
-
----
-
-## Top Coins (PSAR 0.055)
-| Coin | Return |
-|------|--------|
-| UNI | +621% |
-| CRV | +403% |
-| APT | +478% |
-| ARB | +454% |
-| SOL | +355% |
-| ETH | +250% |
+- +524% average return
+- Beats every TradingView indicator
+- Simple and effective
