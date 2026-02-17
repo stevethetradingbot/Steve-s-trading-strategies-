@@ -9,87 +9,62 @@
 4. ✅ Multiple SL/TP ratios optimized
 
 ### Key Findings
-
-| Test | Result |
-|------|--------|
-| SMA vs EMA | **SMA wins** by 23.66% |
-| Position Sizing (2%) | **Hurts performance** - limits gains too much |
-| Best SL/TP | **10%/20%** on ETH |
-| Best Coin | **ETH** (+22.33%) |
+- SMA beats EMA by 23.66%
+- Position sizing (2%) hurts performance
+- Best: ETH, 10% SL, 20% TP
 
 ---
 
 ## Iteration 2 (2026-02-16)
-
-### Research Done
-1. ✅ Volume Filter tested
-2. ✅ Mean Reversion tested
-
-### Key Findings
-
-| Strategy | ETH | BTC | Verdict |
-|----------|-----|-----|---------|
-| **Baseline SMA** | **+24.05%** | **+10.03%** | ✅ **Still best** |
-| Mean Reversion | -4.68% | +5.07% | ❌ Worse |
-| Volume Filter | -3.29% | +2.49% | ❌ Worse |
+- Volume filter tested → Worse
+- Mean reversion tested → Worse
 
 ---
 
 ## Iteration 3 (2026-02-17)
-
-### Research Done
-1. ✅ Built Version 1 (Simple SMA 10/30)
-2. ✅ Built Version 2 (Advanced: RSI + Volume + ATR + Multi-TF)
-3. ✅ Head-to-head comparison
-
-### Key Findings
-
-| Version | Description | ETH | BTC | Average |
-|---------|-------------|-----|-----|---------|
-| V1 | Simple SMA(10/30) + 10% SL + 20% TP | +22.9% | +13.4% | **+18.15%** |
-| V2 | Advanced: RSI + ATR + Volume | +18.3% | +4.8% | +11.58% |
-
-### Conclusion
-- **VERSION 1 (SIMPLE) WINS!**
+- Built V1 (Simple) vs V2 (Advanced)
+- V1 wins: +18.15% vs +11.58%
 
 ---
 
 ## Iteration 4 (2026-02-17)
-
-### Research Done
-1. ✅ Tested 5 different strategies
-2. ✅ Tested on multiple coins (ETH, BTC, SOL, DOT)
-
-### Strategy Showdown Results
-
-| Rank | Strategy | ETH | BTC | SOL | DOT | Average |
-|------|----------|-----|-----|-----|-----|---------|
-| 🥇 | **SMA 10/30** | +23% | +13% | +27% | +6% | +18.2% |
-| 🥈 | MACD | +7% | +8% | - | - | +7.4% |
-| 🥉 | Bollinger | -1% | +8% | - | - | +3.5% |
-| 4 | RSI Only | -5% | +5% | - | - | +0.2% |
-| 5 | SMA 50/200 | +10% | +14% | - | - | +11.9% |
+- Strategy showdown: 5 strategies tested
+- SMA 10/30 wins
 
 ---
 
 ## Iteration 5 (2026-02-17)
+- Tested on 4 coins (ETH, BTC, SOL, DOT)
+- **20/50 wins with +32.8%**
 
-### Research Done
-1. ✅ Tested SMA combinations across 4 coins
-2. ✅ Found optimal crossover periods
+---
 
-### SMA Crossover Comparison
+## Iteration 6 (2026-02-17)
+### Creative Strategy Lab
+| Strategy | Return |
+|----------|--------|
+| Keltner | +21.6% |
+| VWAP | +14.2% |
+| Dual EMA | +13.9% |
+| SMA 20/50 | +32.8% |
 
-| Strategy | ETH | BTC | SOL | DOT | **Average** |
-|----------|-----|-----|-----|-----|-------------|
-| **10/30** | +23% | +13% | +27% | +6% | +17.4% |
-| **20/50** | +41% | +16% | +40% | +34% | **+32.8%** ✅ |
-| 50/200 | -5% | +2% | -13% | -17% | -8.4% |
+---
 
-### Key Finding
-- **20/50 is the BEST** with +32.8% average return!
-- Better than our original 10/30 (+17.4%)
-- 50/200 loses money in current market
+## Iteration 7 (2026-02-17)
+### Hyper-Optimization
+| Settings | Return |
+|----------|--------|
+| 18/45 12/24 | +33.4% |
+| 20/50 12/24 | +30.9% |
+| 10/30 12/24 | +20.2% |
+
+---
+
+## Iteration 8 (2026-02-17)
+### Fine-Tuning
+| Settings | ETH | BTC | SOL | Average |
+|----------|-----|-----|-----|---------|
+| 18/45 12/26 | +51% | +14% | +27% | **+30.6%** |
 
 ---
 
@@ -97,22 +72,17 @@
 
 | Parameter | Value |
 |-----------|-------|
-| **Strategy** | SMA Crossover (20/50) |
-| **Coin** | ETH (or any of tested) |
-| **Stop Loss** | 10% |
-| **Take Profit** | 20% |
-| **Backtest Return** | **+32.8%** |
+| **Strategy** | SMA Crossover |
+| **SMA Periods** | 18 (fast) / 45 (slow) |
+| **Stop Loss** | 12% |
+| **Take Profit** | 26% |
+| **Coins** | ETH, BTC, SOL |
+| **Backtest Return** | **+30-33%** |
 
 ---
 
-## Paper Trading Status
-- ✅ Active via cron job (hourly)
-- ✅ Using live ETH price data
-- ✅ Paper trading only (no real money)
-
----
-
-## Next Steps
-- [ ] Switch to 20/50 strategy for paper trading
-- [ ] Test on even more coins
-- [ ] Consider going live with small amount
+## What We Learned
+1. Simple SMA crossovers beat complex indicators
+2. Faster SMAs (10/30) good, medium (18-20/45-50) better
+3. SL/TP around 12/24-26% works best
+4. Volume/RSI filters hurt more than help
