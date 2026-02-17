@@ -2,37 +2,36 @@
 
 ## 🚨 CURRENT BEST: PARABOLIC SAR 0.055
 
-### Test Results (PSAR 0.055, 10% SL, 26% TP)
-
-| Coin | PSAR Return |
-|------|-------------|
-| UNI | +621% |
-| CRV | +403% |
-| APT | +478% |
-| ARB | +454% |
-| SOL | +355% |
-| ETH | +250% |
-
-**PORTFOLIO AVERAGE: +427%**
+### Portfolio Average: +427%
 
 ---
 
 ## What Works
 - **Parabolic SAR 0.055** 🚨 CHAMPION!
-- Simple SMA crossover (24/56) - good baseline
 
 ## What Doesn't Work (Tested)
-- RSI - ❌
-- MACD - ❌
-- Bollinger Bands - ❌
-- Supertrend - ❌ (+44% only)
-- ATR-based stops - ❌
-- Volume filters - ❌
-- EMA - ❌
-- Time exits - ❌
-- Dual timeframe - ❌
-- Fair Value Gaps (FVG) - ❌ (+69%)
-- TradingView indicators - ❌
+
+| Indicator | Return | vs PSAR |
+|----------|--------|---------|
+| PSAR 0.055 | +427% | 🥇 |
+| Heikin-Ashi | +274% | ❌ |
+| SMA 24/56 | +47% | ❌ |
+| FVG | +69% | ❌ |
+| Supertrend | +44% | ❌ |
+| MACD | +26% | ❌ |
+| VWAP | +27% | ❌ |
+| ZigZag | +6% | ❌ |
+| RSI | +10% | ❌ |
+| Triple EMA | 0% | ❌ |
+| Bollinger Bands | +16% | ❌ |
+
+---
+
+## Conclusion
+
+**Simple Parabolic SAR with AF=0.055 is the best strategy!**
+
+It beats all TradingView indicators we've tested.
 
 ---
 
