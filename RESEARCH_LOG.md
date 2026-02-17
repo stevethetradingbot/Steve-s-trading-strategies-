@@ -1,48 +1,40 @@
 # Trading Bot Research Log
 
-## 🚨 FINAL RESULTS
+## 🚨 NEW RECORD: PSAR DAILY 20/40
 
-## Timeframe Comparison (PSAR 0.07)
+## SL/TP Optimization (Daily)
 
-| Timeframe | Average Return |
-|-----------|----------------|
-| **1D (Daily)** | **+1,341%** |
-| 1H (Hourly) | +524% |
+| SL/TP | Return |
+|-------|--------|
+| **20/40** | **+2,004%** |
+| 20/50 | +1,247% |
+| 10/30 | +705% |
+| 10/26 | +1,341% |
 
 ---
 
-## Daily Top Coins
+## Best Coins (Daily 20/40)
 | Coin | Return |
 |------|--------|
-| ARB | +2,095% |
-| APT | +1,980% |
-| SOL | +1,609% |
-| AVAX | +1,393% |
-| CRV | +1,387% |
-| NEAR | +1,386% |
-| OP | +1,535% |
-| ETH | +1,000%+ |
+| ARB | +4,404% |
+| OP | +2,227% |
+| NEAR | +2,706% |
+| UNI | +1,055% |
+| DOT | +1,358% |
+| BTC | +275% |
 
 ---
 
-## All Indicators Tested (Hourly)
+## Timeframe Comparison
 
-| Indicator | Return |
-|----------|--------|
-| **PSAR 0.07** | +524% |
-| PSAR 0.055 | +427% |
-| Heikin-Ashi | +274% |
-| SMA 24/56 | +47% |
-| Trend Ribbon | +50% |
-| FVG | +69% |
-| Supertrend | +44% |
-| MACD | +26% |
+| Timeframe | Return |
+|-----------|--------|
+| **Daily 20/40** | **+2,004%** |
+| Daily 10/26 | +1,341% |
+| Hourly 0.07 | +524% |
 
 ---
 
 ## Conclusion
 
-**Daily timeframe PSAR 0.07 is the ultimate strategy!**
-- +1,341% average return
-- Beats hourly by 2.5x
-- Simple and effective
+**Daily PSAR 0.07 with 20% SL / 40% TP is the ultimate strategy!**
