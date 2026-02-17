@@ -8,7 +8,7 @@ const COIN = 'ETH';
 const INITIAL_CAPITAL = 10000;
 const STOP_LOSS_PCT = 10;
 const TAKE_PROFIT_PCT = 26;
-const AF = 0.04; // Acceleration factor (optimized!)
+const AF = 0.055; // Acceleration factor (optimized!)
 
 console.log('⏰', new Date().toISOString());
 
