@@ -1,15 +1,25 @@
 # Trading Systems - Complete Documentation
 
-_Last updated: Feb 17, 2026_
+_Last updated: Feb 18, 2026_
 
 ---
 
 ## 🤖 CRYPTO TRADING BOT
 
 ### Files
-- `combined_monitor.js` - Main trading monitor (10 coins, hourly)
-- `5min_backtest.js` - Short timeframe backtester
-- `advanced_backtest.js` - Multi-strategy comparison
+- `combined_monitor.js` - Main trading monitor (30 coins, hourly)
+- `blockchain_stats.js` - BTC network stats
+- `ml_strategy.js` - ML-based trading signals
+- `carry_trade_monitor.js` - Macro carry trade monitoring
+
+### API Fallbacks (5-Way)
+| Priority | Exchange | Status |
+|----------|----------|--------|
+| 1 | Kraken | ✅ Primary |
+| 2 | Coinbase | ✅ Fallback |
+| 3 | KuCoin | ✅ Fallback |
+| 4 | Bybit | ⚠️ Blocked (region) |
+| 5 | CoinGecko | ✅ Final fallback |
 
 ### Current Settings (OPTIMIZED)
 ```javascript
@@ -19,27 +29,33 @@ SL = 2%  // Tightened from 10%
 TP = 4%  // Tightened from 26%
 USE_RSI_FILTER = false    // Disabled - blocks trades
 USE_VOLUME_FILTER = false // Disabled - blocks trades  
-USE_MULTITIMEFRAME_FILTER = false // Disabled - blocks trades
+USE_MULTITIMEFRAME_FILTER = true // KEEP - improves results
 ```
 
-### Backtest Results (BTC)
-| Strategy | Return | Win Rate |
-|----------|--------|----------|
-| SMA 24/56 (no filters) | +17.6% | 83% |
-| SMA 12/26 baseline | +9.3% | 54% |
-| With filters | 0% | - |
+### Active Coins (30)
+ETH, BTC, SOL, XRP, ADA, ARB, SUI, NEAR, OP, UNI, DOT, LINK, AVAX, MATIC, ATOM, LTC, XLM, ALGO, VET, FIL, APT, INJ, IMX, STX, SAND, MANA, AAVE, PEPE, SHIB, TRX
 
-### Coin Performance (SMA 24/56)
-| Coin | Return |
-|------|--------|
-| SOL | +50% 🎯 |
-| ETH | +39% |
-| BTC | +17% |
-| ARB | +71% (historical) |
+### Best Strategy: SMA + Multi-TF
+- **Win Rate:** 85.7%
+- **Return:** +19.5%
+- **Timeframe:** Hourly with daily confirmation
 
-### Current Positions
-- **SUI** - LONG @ $0.98 (just entered)
-- **UNI** - LONG @ $3.57 (from earlier)
+---
+
+## 📊 BTC NETWORK MONITOR
+
+### Files
+- `blockchain_stats.js` - Fetches from blockchain.info API
+- `save_blockchain_stats.js` - Saves to JSON for dashboard
+- `dashboard.html` - Web dashboard with all stats
+
+### Dashboard Shows
+- 💰 BTC price
+- ⛏️ Hash rate (TH/s)
+- 📝 24h transactions
+- 🔲 Blocks mined
+- ⏱️ Block time
+- 🧠 Mempool TX count
 
 ---
 
@@ -52,23 +68,26 @@ USE_MULTITIMEFRAME_FILTER = false // Disabled - blocks trades
 
 ### Paper Trading Status
 ```
-Balance: $900 / $1000
+Balance: ~$900 / $1000
 ```
 
 ### Active Bets
-| Bet | Amount | Odds | Potential |
-|-----|--------|------|-----------|
-| Elon cuts 5% budget | $50 | 5.5% | $909 |
-| Weinstein NO prison | $50 | 32.4% | $154 |
+- Elon 5% budget cuts (paper)
+- Weinstein NO prison (paper)
 
-### Value Opportunities Found
-1. **Elon 5% budget cut** - 5.5% → fair 90%+ (underpriced!)
-2. **Weinstein NO prison** - 32% → fair <5% (overpriced!)
+---
 
-### Top Markets by Volume
-1. 2028 Republican Nominee - $1.17M
-2. 2028 Democratic Nominee - $1.08M
-3. 2026 FIFA World Cup - $837K
+## 🛠️ INSTALLED SKILLS
+
+| Skill | Purpose |
+|-------|---------|
+| kalshi-trading | Kalshi prediction markets |
+| github | GitHub CLI integration |
+| weather | Weather data |
+| slack | Slack messaging |
+| polymarket-odds | Polymarket data |
+| polyedge | Prediction market analysis |
+| openbroker | Broker integration |
 
 ---
 
@@ -76,51 +95,67 @@ Balance: $900 / $1000
 
 | Job | Frequency | Purpose |
 |-----|-----------|---------|
-| paper-trade-monitor | Every 4 hours | Crypto signals |
+| paper-trade-monitor | Every 2 hours | Crypto signals |
 | polymarket-value-scan | Every 6 hours | Betting opportunities |
-| trade-signal-alert | Every 4 hours | Position alerts |
+| trade-signal-alert | Every 2 hours | Position alerts |
+| hourly-skill-retry | Every 1 hour | Install flagged skills |
 
 ---
 
 ## 📋 COMMANDS
 
-### Crypto
+### Run Monitor
 ```bash
 cd /home/matthewkania.mk/.openclaw/workspace/trading_bot
-node combined_monitor.js          # Run monitor
-node advanced_backtest.js        # Backtest strategies
+node combined_monitor.js
 ```
 
-### Polymarket
+### Update Blockchain Stats
 ```bash
-node polymarket_value_scanner.js # Find opportunities
-node polymarket_paper.js status  # Check bets
-node polymarket_paper.js bet <amount> <odds> <yes/no> "<market>"
-node polymarket_paper.js resolve <id> won
+node save_blockchain_stats.js
 ```
+
+### Check Dashboard
+Open `dashboard.html` in browser
 
 ---
 
 ## 🔑 KEY INSIGHTS
 
-1. **Filters kill performance** - Backtest proved strict filters block all trades
-2. **SOL outperforms** - +50% vs BTC +17% with same strategy
-3. **Simple > Complex** - SMA 24/56 beats complicated indicators
-4. **Polymarket inefficiency** - Low-volume bets can have edges
-5. **Tight SL/TP works** - 2%/4% better than 10%/26%
+1. **Multi-TF filter is key** - Adds +10% improvement
+2. **Filters kill performance** - RSI/Volume filters block all trades
+3. **SOL outperforms** - +50% vs BTC +17% with same strategy
+4. **Simple > Complex** - SMA beats complicated indicators
+5. **5-way API fallback** - Never miss data
+6. **Tight SL/TP works** - 2%/4% better than 10%/26%
 
 ---
 
 ## 📁 FILE STRUCTURE
 ```
 /home/matthewkania.mk/.openclaw/workspace/trading_bot/
-├── combined_monitor.js      # Main crypto monitor
-├── polymarket_monitor.js    # Market scanner
+├── combined_monitor.js      # Main crypto monitor (30 coins)
+├── blockchain_stats.js      # BTC network stats
+├── ml_strategy.js          # ML-based signals
+├── carry_trade_monitor.js # Macro monitoring
+├── polymarket_monitor.js   # Market scanner
 ├── polymarket_value_scanner.js # Value finder
-├── polymarket_paper.js      # Paper trading
-├── 5min_backtest.js        # Short TF backtest
-├── advanced_backtest.js    # Strategy comparison
-├── paper_summary.json       # Trade positions
-├── polymarket_paper.json   # Betting history
-└── strategy_backtest.json # Backtest results
+├── polymarket_paper.js    # Paper trading
+├── dashboard.html          # Web dashboard
+├── paper_summary.json      # Trade positions
+├── polymarket_paper.json  # Betting history
+└── states/                # Coin state files (100+)
 ```
+
+---
+
+## 🚀 ROADMAP
+
+- [ ] Test kalshi-trading skill
+- [ ] Add news aggregator
+- [ ] Go live with $100-500
+- [ ] Build 4-hour timeframe strategy
+
+---
+
+**Built with 🔥 by Steve & AI**
