@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-02-18T12:12:03.868Z",
+  "config": {
+    "RSI_BUY_LEVEL": 30,
+    "RSI_SELL_LEVEL": 70,
+    "SL_PCT": 3,
+    "TP_PCT": 5,
+    "INITIAL_CAPITAL": 1000,
+    "POSITION_SIZE": 100
+  },
+  "results": [
+    {
+      "symbol": "ETH",
+      "trades": 14,
+      "wins": 5,
+      "losses": 9,
+      "winRate": 35.714285714285715,
+      "returnPct": -0.9090097196133456,
+      "finalCapital": 990.9099028038665
+    },
+    {
+      "symbol": "BTC",
+      "trades": 11,
+      "wins": 5,
+      "losses": 6,
+      "winRate": 45.45454545454545,
+      "returnPct": -0.8300089133334722,
+      "finalCapital": 991.6999108666653
+    },
+    {
+      "symbol": "ARB",
+      "trades": 9,
+      "wins": 2,
+      "losses": 7,
+      "winRate": 22.22222222222222,
+      "returnPct": -1.2490019174411373,
+      "finalCapital": 987.5099808255886
+    },
+    {
+      "symbol": "SOL",
+      "trades": 13,
+      "wins": 5,
+      "losses": 8,
+      "winRate": 38.46153846153847,
+      "returnPct": -0.8313922486766956,
+      "finalCapital": 991.686077513233
+    },
+    {
+      "symbol": "NEAR",
+      "trades": 8,
+      "wins": 3,
+      "losses": 5,
+      "winRate": 37.5,
+      "returnPct": -0.1675859247317021,
+      "finalCapital": 998.324140752683
+    }
+  ]
+}

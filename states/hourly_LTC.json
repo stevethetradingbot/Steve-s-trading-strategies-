@@ -1,0 +1,10 @@
+{
+  "position": "long",
+  "entryPrice": 52.99,
+  "entryTime": "2026-02-18T22:25:40.207Z",
+  "trailingStop": null,
+  "breakeven": false,
+  "slAtBreakeven": false,
+  "partialTaken": false,
+  "partialExitPrice": null
+}

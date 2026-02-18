@@ -1,0 +1,546 @@
+{
+  "timestamp": "2026-02-18T22:25:18.821Z",
+  "hourly": [
+    {
+      "symbol": "ETH",
+      "strategy": "Hourly SMA+",
+      "price": "1940.69",
+      "rsi": "34.7",
+      "volumeRatio": "0.14",
+      "signal": "WAIT",
+      "position": null,
+      "entryPrice": null,
+      "filters": {
+        "rsi": 34.69982543112995,
+        "volume": 114.80278344,
+        "avgVolume": 806.9585985985002,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "BTC",
+      "strategy": "Hourly SMA+",
+      "price": "66260.00",
+      "rsi": "34.7",
+      "volumeRatio": "0.18",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 66359.4,
+      "filters": {
+        "rsi": 34.65760601516075,
+        "volume": 17.37885276,
+        "avgVolume": 94.5790403705,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "SOL",
+      "strategy": "Hourly SMA+",
+      "price": "81.06",
+      "rsi": "30.0",
+      "volumeRatio": "0.38",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 81.15,
+      "filters": {
+        "rsi": 29.98073500873589,
+        "volume": 6871.91759109,
+        "avgVolume": 18142.027512918503,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "XRP",
+      "strategy": "Hourly SMA+",
+      "price": "1.42",
+      "rsi": "28.4",
+      "volumeRatio": "0.53",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 1.42079,
+      "filters": {
+        "rsi": 28.356076820773723,
+        "volume": 293447.77378018,
+        "avgVolume": 557992.8529795915,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "ADA",
+      "strategy": "Hourly SMA+",
+      "price": "0.27",
+      "rsi": "32.3",
+      "volumeRatio": "0.17",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.273524,
+      "filters": {
+        "rsi": 32.30598672820918,
+        "volume": 77848.51116561,
+        "avgVolume": 459991.89440418396,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "ARB",
+      "strategy": "Hourly SMA+",
+      "price": "0.11",
+      "rsi": "26.5",
+      "volumeRatio": "0.33",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.1075,
+      "filters": {
+        "rsi": 26.52382266963312,
+        "volume": 11134.65734,
+        "avgVolume": 34183.018323,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "SUI",
+      "strategy": "Hourly SMA+",
+      "price": "0.93",
+      "rsi": "27.6",
+      "volumeRatio": "0.11",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.9289,
+      "filters": {
+        "rsi": 27.559153191277048,
+        "volume": 23079.30874,
+        "avgVolume": 205987.216779,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "NEAR",
+      "strategy": "Hourly SMA+",
+      "price": "1.01",
+      "rsi": "32.2",
+      "volumeRatio": "0.15",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 1.015,
+      "filters": {
+        "rsi": 32.23469132284609,
+        "volume": 3856.63327019,
+        "avgVolume": 26376.156110975997,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "OP",
+      "strategy": "Hourly SMA+",
+      "price": "0.17",
+      "rsi": "16.7",
+      "volumeRatio": "10.37",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.166,
+      "filters": {
+        "rsi": 16.671050756066975,
+        "volume": 2851511.63244,
+        "avgVolume": 274853.4455769999,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "UNI",
+      "strategy": "Hourly SMA+",
+      "price": "3.37",
+      "rsi": "29.7",
+      "volumeRatio": "1.79",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 3.385,
+      "filters": {
+        "rsi": 29.665659628847337,
+        "volume": 18311.00805634,
+        "avgVolume": 10255.046372091,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "DOT",
+      "strategy": "Hourly SMA+",
+      "price": "1.30",
+      "rsi": "30.2",
+      "volumeRatio": "0.06",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 1.3089,
+      "filters": {
+        "rsi": 30.161945669006442,
+        "volume": 903.88363416,
+        "avgVolume": 14935.5746728435,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "LINK",
+      "strategy": "Hourly SMA+",
+      "price": "8.54",
+      "rsi": "31.3",
+      "volumeRatio": "0.13",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 8.56153,
+      "filters": {
+        "rsi": 31.294701698730023,
+        "volume": 1015.81789435,
+        "avgVolume": 7707.534750413501,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "AVAX",
+      "strategy": "Hourly SMA+",
+      "price": "8.82",
+      "rsi": "31.3",
+      "volumeRatio": "0.09",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 8.87,
+      "filters": {
+        "rsi": 31.338013508253866,
+        "volume": 277.07913877,
+        "avgVolume": 3113.691856011501,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "MATIC",
+      "strategy": "Hourly SMA+",
+      "price": "0.20",
+      "rsi": "69.1",
+      "volumeRatio": "0.01",
+      "signal": "WAIT",
+      "position": null,
+      "entryPrice": null,
+      "filters": {
+        "rsi": 69.08836648818105,
+        "volume": 67.2,
+        "avgVolume": 6350.525,
+        "dailyAlign": "sell_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "ATOM",
+      "strategy": "Hourly SMA+",
+      "price": "2.32",
+      "rsi": "48.7",
+      "volumeRatio": "0.31",
+      "signal": "WAIT",
+      "position": null,
+      "entryPrice": null,
+      "filters": {
+        "rsi": 48.737546849677265,
+        "volume": 7812.40213525,
+        "avgVolume": 25108.2299043465,
+        "dailyAlign": "sell_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "LTC",
+      "strategy": "Hourly SMA+",
+      "price": "52.99",
+      "rsi": "32.9",
+      "volumeRatio": "0.23",
+      "signal": "LONG_ENTRY",
+      "position": "long",
+      "entryPrice": 52.99,
+      "filters": {
+        "rsi": 32.938348225306896,
+        "volume": 289.59203198,
+        "avgVolume": 1254.6131061870003,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "XLM",
+      "strategy": "Hourly SMA+",
+      "price": "0.16",
+      "rsi": "30.8",
+      "volumeRatio": "5.05",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.16158,
+      "filters": {
+        "rsi": 30.822112974124437,
+        "volume": 2658944.23739703,
+        "avgVolume": 526076.4579792975,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "ALGO",
+      "strategy": "Hourly SMA+",
+      "price": "0.09",
+      "rsi": "29.8",
+      "volumeRatio": "1.12",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.0907,
+      "filters": {
+        "rsi": 29.815187691736412,
+        "volume": 108412.02669109,
+        "avgVolume": 96700.53240031749,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "VET",
+      "strategy": "Hourly SMA+",
+      "price": "0.01",
+      "rsi": "30.4",
+      "volumeRatio": "0.23",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.007866,
+      "filters": {
+        "rsi": 30.449388232501192,
+        "volume": 25310.87282,
+        "avgVolume": 107876.21240350002,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "FIL",
+      "strategy": "Hourly SMA+",
+      "price": "0.92",
+      "rsi": "30.9",
+      "volumeRatio": "0.04",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.923,
+      "filters": {
+        "rsi": 30.888655814092644,
+        "volume": 311.80647487,
+        "avgVolume": 7316.010652719499,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "APT",
+      "strategy": "Hourly SMA+",
+      "price": "0.87",
+      "rsi": "32.3",
+      "volumeRatio": "0.05",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.8779,
+      "filters": {
+        "rsi": 32.3078865388258,
+        "volume": 413.49185086,
+        "avgVolume": 8439.4069846245,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "INJ",
+      "strategy": "Hourly SMA+",
+      "price": "2.96",
+      "rsi": "25.9",
+      "volumeRatio": "0.42",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 2.981,
+      "filters": {
+        "rsi": 25.904481720215244,
+        "volume": 664.11708437,
+        "avgVolume": 1600.2600452049996,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "IMX",
+      "strategy": "Hourly SMA+",
+      "price": "0.16",
+      "rsi": "36.2",
+      "volumeRatio": "0.18",
+      "signal": "WAIT",
+      "position": null,
+      "entryPrice": null,
+      "filters": {
+        "rsi": 36.185937943282745,
+        "volume": 1024.62930531,
+        "avgVolume": 5718.3477258265,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "STX",
+      "strategy": "Hourly SMA+",
+      "price": "0.25",
+      "rsi": "32.4",
+      "volumeRatio": "0.46",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.2525,
+      "filters": {
+        "rsi": 32.41517561727058,
+        "volume": 6035.46586202,
+        "avgVolume": 13022.2893556185,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "SAND",
+      "strategy": "Hourly SMA+",
+      "price": "0.08",
+      "rsi": "32.0",
+      "volumeRatio": "0.06",
+      "signal": "LONG_ENTRY",
+      "position": "long",
+      "entryPrice": 0.0836,
+      "filters": {
+        "rsi": 31.969947330900908,
+        "volume": 1593.4068119,
+        "avgVolume": 24912.0104402405,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "MANA",
+      "strategy": "Hourly SMA+",
+      "price": "0.10",
+      "rsi": "31.5",
+      "volumeRatio": "0.00",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.09843,
+      "filters": {
+        "rsi": 31.476354934524167,
+        "volume": 195.98697269,
+        "avgVolume": 40294.0996051345,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "AAVE",
+      "strategy": "Hourly SMA+",
+      "price": "122.64",
+      "rsi": "37.0",
+      "volumeRatio": "0.05",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 121.46,
+      "filters": {
+        "rsi": 36.992465277347804,
+        "volume": 60.90958986,
+        "avgVolume": 1142.4752283169996,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "PEPE",
+      "strategy": "Hourly SMA+",
+      "price": "0.00",
+      "rsi": "27.7",
+      "volumeRatio": "3.61",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.000004231,
+      "filters": {
+        "rsi": 27.682365015036765,
+        "volume": 19680066559.53465,
+        "avgVolume": 5456852882.508614,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "SHIB",
+      "strategy": "Hourly SMA+",
+      "price": "0.00",
+      "rsi": "29.2",
+      "volumeRatio": "0.35",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.00000631,
+      "filters": {
+        "rsi": 29.170284248129988,
+        "volume": 266370612.56894,
+        "avgVolume": 755368598.5972894,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    },
+    {
+      "symbol": "TRX",
+      "strategy": "Hourly SMA+",
+      "price": "0.28",
+      "rsi": "36.9",
+      "volumeRatio": "0.06",
+      "signal": "HOLD",
+      "position": "long",
+      "entryPrice": 0.278317,
+      "filters": {
+        "rsi": 36.93441618567708,
+        "volume": 7189.94025572,
+        "avgVolume": 110704.64350843997,
+        "dailyAlign": "buy_ok",
+        "passed": true
+      },
+      "action": null
+    }
+  ],
+  "daily": []
+}

@@ -1,5 +1,6 @@
 {
   "position": null,
   "entryPrice": null,
-  "entryTime": null
+  "entryTime": null,
+  "trailingStop": null
 }

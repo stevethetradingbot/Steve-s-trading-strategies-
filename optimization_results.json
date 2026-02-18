@@ -1,0 +1,112 @@
+[
+  {
+    "fast": 12,
+    "slow": 26,
+    "sl": 2,
+    "tp": 4,
+    "multitf": true,
+    "trades": 0,
+    "winRate": 0,
+    "returnPct": 0
+  },
+  {
+    "fast": 12,
+    "slow": 26,
+    "sl": 3,
+    "tp": 6,
+    "multitf": true,
+    "trades": 0,
+    "winRate": 0,
+    "returnPct": 0
+  },
+  {
+    "fast": 24,
+    "slow": 56,
+    "sl": 2,
+    "tp": 4,
+    "multitf": false,
+    "trades": 0,
+    "winRate": 0,
+    "returnPct": 0
+  },
+  {
+    "fast": 24,
+    "slow": 56,
+    "sl": 2,
+    "tp": 4,
+    "multitf": true,
+    "trades": 0,
+    "winRate": 0,
+    "returnPct": 0
+  },
+  {
+    "fast": 24,
+    "slow": 56,
+    "sl": 3,
+    "tp": 6,
+    "multitf": false,
+    "trades": 0,
+    "winRate": 0,
+    "returnPct": 0
+  },
+  {
+    "fast": 24,
+    "slow": 56,
+    "sl": 3,
+    "tp": 6,
+    "multitf": true,
+    "trades": 0,
+    "winRate": 0,
+    "returnPct": 0
+  },
+  {
+    "fast": 9,
+    "slow": 21,
+    "sl": 2,
+    "tp": 4,
+    "multitf": true,
+    "trades": 0,
+    "winRate": 0,
+    "returnPct": 0
+  },
+  {
+    "fast": 10,
+    "slow": 30,
+    "sl": 2,
+    "tp": 5,
+    "multitf": true,
+    "trades": 0,
+    "winRate": 0,
+    "returnPct": 0
+  },
+  {
+    "fast": 20,
+    "slow": 50,
+    "sl": 2,
+    "tp": 4,
+    "multitf": true,
+    "trades": 0,
+    "winRate": 0,
+    "returnPct": 0
+  },
+  {
+    "fast": 12,
+    "slow": 26,
+    "sl": 2,
+    "tp": 4,
+    "multitf": false,
+    "trades": 10,
+    "winRate": 20,
+    "returnPct": -0.1603187222387214
+  },
+  {
+    "fast": 12,
+    "slow": 26,
+    "sl": 3,
+    "tp": 6,
+    "multitf": false,
+    "trades": 19,
+    "winRate": 0,
+    "returnPct": -1.1338988660140057
+  }
+]

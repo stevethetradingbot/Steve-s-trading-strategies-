@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve's Trading Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #30363d;
+        }
+        h1 { font-size: 1.8rem; color: #58a6ff; }
+        .subtitle { color: #8b949e; font-size: 0.9rem; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
+        .card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #58a6ff;
+        }
+        
+        .balance {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #3fb950;
+        }
+        .balance.negative { color: #f85149; }
+        .balance-label { color: #8b949e; font-size: 0.9rem; }
+        
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #30363d; }
+        th { color: #8b949e; font-size: 0.8rem; font-weight: normal; }
+        
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        .tag.green { background: rgba(63,185,80,0.2); color: #3fb950; }
+        .tag.red { background: rgba(248,81,73,0.2); color: #f85149; }
+        
+        .refresh-btn {
+            background: #238636;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .refresh-btn:hover { background: #2ea043; }
+        
+        .footer {
+            text-align: center;
+            color: #8b949e;
+            font-size: 0.8rem;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>📊 Steve's Trading Dashboard</h1>
+                <p class="subtitle">Crypto + Polymarket Paper Trading</p>
+            </div>
+            <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
+        </header>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>💰 Crypto Positions</h2>
+                <div id="crypto-positions">Loading...</div>
+            </div>
+            
+            <div class="card">
+                <h2>🎰 Polymarket Bets</h2>
+                <div id="pmark-bets">Loading...</div>
+            </div>
+            
+            <div class="card">
+                <h2>📈 Performance</h2>
+                <div id="stats">Loading...</div>
+            </div>
+            
+            <div class="card">
+                <h2>🔍 Market Status</h2>
+                <div id="market-status">Loading...</div>
+            </div>
+            
+            <div class="card">
+                <h2>⛏️ BTC Network</h2>
+                <div id="btc-network">Loading...</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Auto-updates every 30 seconds | Last updated: <span id="last-update">-</span>
+        </div>
+    </div>
+    
+    <script>
+        async function loadData() {
+            const now = new Date().toLocaleTimeString();
+            document.getElementById('last-update').textContent = now;
+            
+            try {
+                const cryptoRes = await fetch('paper_summary.json');
+                const cryptoData = await cryptoRes.json();
+                renderCrypto(cryptoData);
+            } catch(e) {
+                document.getElementById('crypto-positions').innerHTML = '<p style="color:#f85149">Error loading data</p>';
+            }
+            
+            try {
+                const pmarkRes = await fetch('polymarket_paper.json');
+                const pmarkData = await pmarkRes.json();
+                renderPmark(pmarkData);
+            } catch(e) {
+                document.getElementById('pmark-bets').innerHTML = '<p style="color:#f85149">Error loading data</p>';
+            }
+            
+            try {
+                const btcRes = await fetch('blockchain_stats.json');
+                const btcData = await btcRes.json();
+                renderBTC(btcData);
+            } catch(e) {
+                document.getElementById('btc-network').innerHTML = '<p style="color:#f85149">Error loading data</p>';
+            }
+        }
+        
+        function renderCrypto(data) {
+            const positions = data.hourly?.filter(c => c.position) || [];
+            
+            if (positions.length === 0) {
+                document.getElementById('crypto-positions').innerHTML = '<p>No open positions</p>';
+                return;
+            }
+            
+            let html = '<table><tr><th>Coin</th><th>Entry</th><th>Current</th><th>P/L</th></tr>';
+            let totalPl = 0;
+            
+            positions.forEach(p => {
+                const entry = parseFloat(p.entryPrice);
+                const current = parseFloat(p.price);
+                const pl = ((current - entry) / entry) * 100;
+                totalPl += pl;
+                
+                const tagClass = pl >= 0 ? 'green' : 'red';
+                
+                html += `<tr>
+                    <td><strong>${p.symbol}</strong></td>
+                    <td>$${entry.toFixed(2)}</td>
+                    <td>$${current.toFixed(2)}</td>
+                    <td><span class="tag ${tagClass}">${pl >= 0 ? '+' : ''}${pl.toFixed(2)}%</span></td>
+                </tr>`;
+            });
+            
+            html += '</table>';
+            document.getElementById('crypto-positions').innerHTML = html;
+            
+            const statsEl = document.getElementById('stats');
+            const plClass = totalPl >= 0 ? '' : 'negative';
+            statsEl.innerHTML = `
+                <p class="balance-label">Crypto P/L</p>
+                <p class="balance ${plClass}">${totalPl >= 0 ? '+' : ''}${totalPl.toFixed(2)}%</p>
+            `;
+        }
+        
+        function renderPmark(data) {
+            const bets = data.bets || [];
+            const balance = data.balance || 0;
+            
+            let html = `<p class="balance-label">Balance: $${balance.toFixed(2)} / $1000</p>`;
+            
+            if (bets.length === 0) {
+                html += '<p style="margin-top:10px">No active bets</p>';
+            } else {
+                html += '<table style="margin-top:10px"><tr><th>Bet</th><th>Stake</th><th>Odds</th><th>Potential</th></tr>';
+                bets.forEach(b => {
+                    const potential = b.potentialWin || (b.amount / b.odds);
+                    html += `<tr>
+                        <td>${b.outcome.toUpperCase()}</td>
+                        <td>$${b.amount}</td>
+                        <td>${(b.odds * 100).toFixed(1)}%</td>
+                        <td>$${potential.toFixed(2)}</td>
+                    </tr>`;
+                });
+                html += '</table>';
+            }
+            
+            document.getElementById('pmark-bets').innerHTML = html;
+        }
+        
+        function renderBTC(data) {
+            if (!data || !data.stats) {
+                document.getElementById('btc-network').innerHTML = '<p>No data</p>';
+                return;
+            }
+            const s = data.stats;
+            const m = data.mempool || {};
+            const price = s.marketPrice || 0;
+            
+            let html = `<p style="font-size:1.4rem;color:#f7931a">$${price.toLocaleString()}</p>`;
+            html += '<table>';
+            html += `<tr><td>⛏️ Hash Rate</td><td>${(s.hashRate / 1e12).toFixed(1)} TH/s</td></tr>`;
+            html += `<tr><td>📝 24h TXs</td><td>${(s.nTx / 1000).toFixed(0)}K</td></tr>`;
+            html += `<tr><td>🔲 Blocks</td><td>${s.blocksMined}</td></tr>`;
+            html += `<tr><td>⏱️ Block Time</td><td>${s.minutesBetweenBlocks.toFixed(1)} min</td></tr>`;
+            if (m.mempoolCount) {
+                html += `<tr><td>🧠 Mempool</td><td>${m.mempoolCount.toLocaleString()} TX</td></tr>`;
+            }
+            html += '</table>';
+            document.getElementById('btc-network').innerHTML = html;
+        }
+        
+        loadData();
+        setInterval(loadData, 30000);
+    </script>
+</body>
+</html>

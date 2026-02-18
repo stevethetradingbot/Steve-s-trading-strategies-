@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-02-18T22:24:03.879Z",
+  "stats": {
+    "marketPrice": 66125.47,
+    "hashRate": 926000881326.1038,
+    "nTx": 528844,
+    "totalBTC": 19991531.25,
+    "blocksMined": 148,
+    "minutesBetweenBlocks": 9.2041,
+    "difficulty": 125864590119494,
+    "minersRevenue": 0
+  },
+  "mempool": null
+}

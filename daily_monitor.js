@@ -21,7 +21,8 @@ function fetchData() {
             res.on('end', () => {
                 try {
                     const json = JSON.parse(data);
-                    resolve(json.Data.Data.reverse().map(d => ({
+                    // API returns newest first - keep as is for current price
+                    resolve(json.Data.Data.map(d => ({
                         high: d.high,
                         low: d.low,
                         close: d.close
@@ -34,38 +35,40 @@ function fetchData() {
 
 // Calculate Parabolic SAR
 function calculatePSAR(data) {
-    let sar = data[0].low;
-    let ep = data[0].high;
+    // PSAR needs chronological order (oldest first)
+    const chronData = [...data].reverse();
+    let sar = chronData[0].low;
+    let ep = chronData[0].high;
     let trend = 1;
     let af = AF;
     
     const results = [];
     
-    for (let i = 1; i < data.length; i++) {
+    for (let i = 1; i < chronData.length; i++) {
         const oldSar = sar;
         sar = sar + af * (ep - sar);
         
         if (trend === 1) {
-            if (data[i].low < sar) {
+            if (chronData[i].low < sar) {
                 trend = -1;
                 sar = ep;
-                ep = data[i].low;
+                ep = chronData[i].low;
                 af = AF;
             } else {
-                if (data[i].high > ep) {
-                    ep = data[i].high;
+                if (chronData[i].high > ep) {
+                    ep = chronData[i].high;
                     af = Math.min(af + AF, 0.2);
                 }
             }
         } else {
-            if (data[i].high > sar) {
+            if (chronData[i].high > sar) {
                 trend = 1;
                 sar = ep;
-                ep = data[i].high;
+                ep = chronData[i].high;
                 af = AF;
             } else {
-                if (data[i].low < ep) {
-                    ep = data[i].low;
+                if (chronData[i].low < ep) {
+                    ep = chronData[i].low;
                     af = Math.min(af + AF, 0.2);
                 }
             }
@@ -74,7 +77,8 @@ function calculatePSAR(data) {
         results.push({ sar, trend, ep });
     }
     
-    return results;
+    // Reverse back to match original order (newest first)
+    return results.reverse();
 }
 
 // Load state

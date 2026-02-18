@@ -1,0 +1,447 @@
+{
+  "timestamp": "2026-02-18T18:02:12.274Z",
+  "totalMarkets": 250,
+  "analyzed": 250,
+  "opportunities": [
+    {
+      "question": "Will Trump deport less than 250,000?",
+      "slug": "will-trump-deport-less-than-250000",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 4819.250266,
+      "liquidity": 23819.04649,
+      "yesPrice": 0.0405,
+      "noPrice": 0.9595,
+      "yesProb": "4.0",
+      "noProb": "96.0",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0405
+        },
+        {
+          "outcome": "No",
+          "price": 0.9595
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Trump deport 250,000-500,000 people?",
+      "slug": "will-trump-deport-250000-500000-people",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 4234.290839999999,
+      "liquidity": 9784.7737,
+      "yesPrice": 0.915,
+      "noPrice": 0.085,
+      "yesProb": "91.5",
+      "noProb": "8.5",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.915
+        },
+        {
+          "outcome": "No",
+          "price": 0.085
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Trump deport 500,000-750,000- people?",
+      "slug": "will-trump-deport-500000-750000-people",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 2082.519288,
+      "liquidity": 6306.48969,
+      "yesPrice": 0.0235,
+      "noPrice": 0.9765,
+      "yesProb": "2.4",
+      "noProb": "97.7",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0235
+        },
+        {
+          "outcome": "No",
+          "price": 0.9765
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Trump deport 750,000-1,000,000 people?",
+      "slug": "will-trump-deport-750000-1000000-people",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 2053.661877,
+      "liquidity": 7852.44262,
+      "yesPrice": 0.005,
+      "noPrice": 0.995,
+      "yesProb": "0.5",
+      "noProb": "99.5",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.005
+        },
+        {
+          "outcome": "No",
+          "price": 0.995
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Trump deport 1,000,000-1,250,000 people?",
+      "slug": "will-trump-deport-1000000-1250000-people",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 2735.993181,
+      "liquidity": 19219.19542,
+      "yesPrice": 0.004,
+      "noPrice": 0.996,
+      "yesProb": "0.4",
+      "noProb": "99.6",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.004
+        },
+        {
+          "outcome": "No",
+          "price": 0.996
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Trump deport 1,250,000-1,500,000 people?",
+      "slug": "will-trump-deport-1250000-1500000-people",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 8584.189999999999,
+      "liquidity": 12943.36657,
+      "yesPrice": 0.0025,
+      "noPrice": 0.9975,
+      "yesProb": "0.3",
+      "noProb": "99.8",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0025
+        },
+        {
+          "outcome": "No",
+          "price": 0.9975
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Trump deport 1,500,000-1,750,000 people?",
+      "slug": "will-trump-deport-1500000-1750000-people",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 1767.6028319999998,
+      "liquidity": 15102.0992,
+      "yesPrice": 0.0015,
+      "noPrice": 0.9985,
+      "yesProb": "0.1",
+      "noProb": "99.9",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0015
+        },
+        {
+          "outcome": "No",
+          "price": 0.9985
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Trump deport 1,750,000-2,000,000 people?",
+      "slug": "will-trump-deport-1750000-2000000-people",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 1603.522,
+      "liquidity": 24607.55883,
+      "yesPrice": 0.0025,
+      "noPrice": 0.9975,
+      "yesProb": "0.3",
+      "noProb": "99.8",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0025
+        },
+        {
+          "outcome": "No",
+          "price": 0.9975
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Trump deport 2,000,000 or more people?",
+      "slug": "will-trump-deport-2000000-or-more-people",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 3451.175665,
+      "liquidity": 15734.40857,
+      "yesPrice": 0.0025,
+      "noPrice": 0.9975,
+      "yesProb": "0.3",
+      "noProb": "99.8",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0025
+        },
+        {
+          "outcome": "No",
+          "price": 0.9975
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Trump deport 750,000 or more people in 2025?",
+      "slug": "will-trump-deport-750000-or-more-people-in-2025",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 1816.375866,
+      "liquidity": 5473.67363,
+      "yesPrice": 0.034,
+      "noPrice": 0.966,
+      "yesProb": "3.4",
+      "noProb": "96.6",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.034
+        },
+        {
+          "outcome": "No",
+          "price": 0.966
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Elon and DOGE cut less than $50b in federal spending in 2025?",
+      "slug": "will-elon-and-doge-cut-less-than-50b-in-federal-spending-in-2025",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 1191.166934,
+      "liquidity": 36837.62569,
+      "yesPrice": 0.9885,
+      "noPrice": 0.0115,
+      "yesProb": "98.9",
+      "noProb": "1.1",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.9885
+        },
+        {
+          "outcome": "No",
+          "price": 0.0115
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Elon and DOGE cut between $50-100b in federal spending in 2025?",
+      "slug": "will-elon-and-doge-cut-between-50-100b-in-federal-spending-in-2025",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 440.646,
+      "liquidity": 6330.64417,
+      "yesPrice": 0.004,
+      "noPrice": 0.996,
+      "yesProb": "0.4",
+      "noProb": "99.6",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.004
+        },
+        {
+          "outcome": "No",
+          "price": 0.996
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Elon and DOGE cut between $100-150b in federal spending in 2025?",
+      "slug": "will-elon-and-doge-cut-between-100-150b-in-federal-spending-in-2025",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 455.612,
+      "liquidity": 9381.259,
+      "yesPrice": 0.0045,
+      "noPrice": 0.9955,
+      "yesProb": "0.4",
+      "noProb": "99.6",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0045
+        },
+        {
+          "outcome": "No",
+          "price": 0.9955
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Elon and DOGE cut between $150-200b in federal spending in 2025?",
+      "slug": "will-elon-and-doge-cut-between-150-200b-in-federal-spending-in-2025",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 490.616,
+      "liquidity": 6374.35574,
+      "yesPrice": 0.0025,
+      "noPrice": 0.9975,
+      "yesProb": "0.3",
+      "noProb": "99.8",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0025
+        },
+        {
+          "outcome": "No",
+          "price": 0.9975
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Elon and DOGE cut between $200-250b in federal spending in 2025?",
+      "slug": "will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 448.882,
+      "liquidity": 11894.16095,
+      "yesPrice": 0.004,
+      "noPrice": 0.996,
+      "yesProb": "0.4",
+      "noProb": "99.6",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.004
+        },
+        {
+          "outcome": "No",
+          "price": 0.996
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
+      "slug": "will-elon-and-doge-cut-more-than-250b-in-federal-spending-in-2025",
+      "endDate": "2025-12-31T12:00:00Z",
+      "volume24hr": 962.62,
+      "liquidity": 10194.06653,
+      "yesPrice": 0.0035,
+      "noPrice": 0.9965,
+      "yesProb": "0.4",
+      "noProb": "99.7",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0035
+        },
+        {
+          "outcome": "No",
+          "price": 0.9965
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Elon cut the budget by at least 10% in 2025?",
+      "slug": "will-elon-cut-the-budget-by-at-least-10-in-2025",
+      "endDate": "2026-02-28T12:00:00Z",
+      "volume24hr": 1659.532362,
+      "liquidity": 6781.37014,
+      "yesPrice": 0.007,
+      "noPrice": 0.993,
+      "yesProb": "0.7",
+      "noProb": "99.3",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.007
+        },
+        {
+          "outcome": "No",
+          "price": 0.993
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will Elon cut the budget by at least 5% in 2025?",
+      "slug": "will-elon-cut-the-budget-by-at-least-5-in-2025",
+      "endDate": "2026-02-28T12:00:00Z",
+      "volume24hr": 1677.3305099999998,
+      "liquidity": 6437.87272,
+      "yesPrice": 0.01,
+      "noPrice": 0.99,
+      "yesProb": "1.0",
+      "noProb": "99.0",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.01
+        },
+        {
+          "outcome": "No",
+          "price": 0.99
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Will GTA 6 cost $100+?",
+      "slug": "will-gta-6-cost-100",
+      "endDate": "2026-02-28T12:00:00Z",
+      "volume24hr": 75855.82299599999,
+      "liquidity": 93133.01106,
+      "yesPrice": 0.0055,
+      "noPrice": 0.9945,
+      "yesProb": "0.5",
+      "noProb": "99.5",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0055
+        },
+        {
+          "outcome": "No",
+          "price": 0.9945
+        }
+      ],
+      "type": "high_confidence"
+    },
+    {
+      "question": "Rojas guilty in Texas illegal abortion case?",
+      "slug": "rojas-guilty-in-texas-illegal-abortion-case",
+      "endDate": "2026-02-28T12:00:00Z",
+      "volume24hr": 789.42684,
+      "liquidity": 2976.50426,
+      "yesPrice": 0.0105,
+      "noPrice": 0.9895,
+      "yesProb": "1.1",
+      "noProb": "99.0",
+      "outcomes": [
+        {
+          "outcome": "Yes",
+          "price": 0.0105
+        },
+        {
+          "outcome": "No",
+          "price": 0.9895
+        }
+      ],
+      "type": "high_confidence"
+    }
+  ]
+}

@@ -1,107 +1,126 @@
-# 🤖 Steve's Trading Bot
+# Trading Systems - Complete Documentation
 
-A highly profitable crypto trading bot using **Parabolic SAR** strategy. Consistently achieves **+1,000%+ returns** in backtesting!
-
-## 🏆 Best Strategy Found
-
-| Setting | Value |
-|---------|-------|
-| **Indicator** | Parabolic SAR |
-| **AF (Acceleration Factor)** | 0.09 |
-| **Timeframe** | Daily |
-| **Stop Loss** | 20% |
-| **Take Profit** | 40% |
-| **Backtest Return** | **+1,793%** |
-
-## 📈 Performance Evolution
-
-| Version | Strategy | Return |
-|---------|----------|--------|
-| V1 | SMA 10/30 | +18% |
-| V2 | SMA 24/56 | +47% |
-| V3 | PSAR 0.055 (Hourly) | +427% |
-| V4 | PSAR 0.07 (Hourly) | +524% |
-| V5 | PSAR 0.07 Daily | +1,341% |
-| **V6** | **PSAR 0.09 Daily 20/40** | **+1,793%** |
-
-## 🪙 Top Performing Coins (Daily PSAR)
-
-| Coin | Return |
-|------|--------|
-| ARB | +4,536% |
-| SUI | +4,213% |
-| NEAR | +4,013% |
-| OP | +2,753% |
-| UNI | +2,415% |
-| DOT | +1,358% |
-| ETH | +1,000%+ |
-
-## 📊 What We Tested (And What Didn't Work)
-
-| Indicator | Return | vs PSAR |
-|-----------|--------|---------|
-| **PSAR 0.09 Daily** | **+1,793%** | 🥇 |
-| PSAR 0.07 Daily | +1,341% | ❌ |
-| Heikin-Ashi | +274% | ❌ |
-| SMA Crossover | +47% | ❌ |
-| Supertrend | +44% | ❌ |
-| MACD | +26% | ❌ |
-| RSI | +10% | ❌ |
-| Bollinger Bands | +16% | ❌ |
-
-**Conclusion:** Simple Parabolic SAR beats all complex indicators!
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js
-- Internet connection (for price data from CryptoCompare)
-
-### Install
-```bash
-cd trading_bot
-npm install
-```
-
-### Run
-```bash
-# Daily paper trading monitor
-node daily_monitor.js
-
-# Hourly monitor (less optimal)
-node psar_monitor.js
-```
-
-## 📁 Files
-
-| File | Description |
-|------|-------------|
-| `daily_monitor.js` | Daily PSAR monitor (BEST) |
-| `psar_monitor.js` | Hourly PSAR monitor |
-| `live_monitor.js` | Original SMA monitor |
-| `RESEARCH_LOG.md` | Full research findings |
-
-## 🔑 Key Findings
-
-1. **Simple is better** - PSAR beats complex indicators
-2. **Daily > Hourly** - More data = better returns
-3. **AF 0.09** is optimal for daily charts
-4. **20/40 SL/TP** works best with wider stops
-5. **Altcoins > BTC** - Smaller coins yield better returns
-
-## ⚠️ Disclaimer
-
-This bot is for **educational purposes only**. 
-- Past performance ≠ future results
-- Crypto is volatile — you could lose money
-- Always do your own research
-- Start with paper trading, then small amounts ($500)
-- We're not financial advisors!
-
-## 📝 License
-
-MIT — Use at your own risk!
+_Last updated: Feb 17, 2026_
 
 ---
 
-**Built with 🔥 by Steve & AI**
+## 🤖 CRYPTO TRADING BOT
+
+### Files
+- `combined_monitor.js` - Main trading monitor (10 coins, hourly)
+- `5min_backtest.js` - Short timeframe backtester
+- `advanced_backtest.js` - Multi-strategy comparison
+
+### Current Settings (OPTIMIZED)
+```javascript
+SMA_FAST = 24
+SMA_SLOW = 56
+SL = 2%  // Tightened from 10%
+TP = 4%  // Tightened from 26%
+USE_RSI_FILTER = false    // Disabled - blocks trades
+USE_VOLUME_FILTER = false // Disabled - blocks trades  
+USE_MULTITIMEFRAME_FILTER = false // Disabled - blocks trades
+```
+
+### Backtest Results (BTC)
+| Strategy | Return | Win Rate |
+|----------|--------|----------|
+| SMA 24/56 (no filters) | +17.6% | 83% |
+| SMA 12/26 baseline | +9.3% | 54% |
+| With filters | 0% | - |
+
+### Coin Performance (SMA 24/56)
+| Coin | Return |
+|------|--------|
+| SOL | +50% 🎯 |
+| ETH | +39% |
+| BTC | +17% |
+| ARB | +71% (historical) |
+
+### Current Positions
+- **SUI** - LONG @ $0.98 (just entered)
+- **UNI** - LONG @ $3.57 (from earlier)
+
+---
+
+## 🎰 POLYMARKET TRADING
+
+### Files
+- `polymarket_monitor.js` - Scans markets for opportunities
+- `polymarket_value_scanner.js` - Finds mispriced markets
+- `polymarket_paper.js` - Paper trading system
+
+### Paper Trading Status
+```
+Balance: $900 / $1000
+```
+
+### Active Bets
+| Bet | Amount | Odds | Potential |
+|-----|--------|------|-----------|
+| Elon cuts 5% budget | $50 | 5.5% | $909 |
+| Weinstein NO prison | $50 | 32.4% | $154 |
+
+### Value Opportunities Found
+1. **Elon 5% budget cut** - 5.5% → fair 90%+ (underpriced!)
+2. **Weinstein NO prison** - 32% → fair <5% (overpriced!)
+
+### Top Markets by Volume
+1. 2028 Republican Nominee - $1.17M
+2. 2028 Democratic Nominee - $1.08M
+3. 2026 FIFA World Cup - $837K
+
+---
+
+## ⚙️ CRON JOBS RUNNING
+
+| Job | Frequency | Purpose |
+|-----|-----------|---------|
+| paper-trade-monitor | Every 4 hours | Crypto signals |
+| polymarket-value-scan | Every 6 hours | Betting opportunities |
+| trade-signal-alert | Every 4 hours | Position alerts |
+
+---
+
+## 📋 COMMANDS
+
+### Crypto
+```bash
+cd /home/matthewkania.mk/.openclaw/workspace/trading_bot
+node combined_monitor.js          # Run monitor
+node advanced_backtest.js        # Backtest strategies
+```
+
+### Polymarket
+```bash
+node polymarket_value_scanner.js # Find opportunities
+node polymarket_paper.js status  # Check bets
+node polymarket_paper.js bet <amount> <odds> <yes/no> "<market>"
+node polymarket_paper.js resolve <id> won
+```
+
+---
+
+## 🔑 KEY INSIGHTS
+
+1. **Filters kill performance** - Backtest proved strict filters block all trades
+2. **SOL outperforms** - +50% vs BTC +17% with same strategy
+3. **Simple > Complex** - SMA 24/56 beats complicated indicators
+4. **Polymarket inefficiency** - Low-volume bets can have edges
+5. **Tight SL/TP works** - 2%/4% better than 10%/26%
+
+---
+
+## 📁 FILE STRUCTURE
+```
+/home/matthewkania.mk/.openclaw/workspace/trading_bot/
+├── combined_monitor.js      # Main crypto monitor
+├── polymarket_monitor.js    # Market scanner
+├── polymarket_value_scanner.js # Value finder
+├── polymarket_paper.js      # Paper trading
+├── 5min_backtest.js        # Short TF backtest
+├── advanced_backtest.js    # Strategy comparison
+├── paper_summary.json       # Trade positions
+├── polymarket_paper.json   # Betting history
+└── strategy_backtest.json # Backtest results
+```

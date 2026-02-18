@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-02-18T20:57:48.969Z",
+  "suspicious": [
+    {
+      "type": "UNDERPRICED",
+      "question": "Will Elon cut the budget by at least 5% in 2025?",
+      "current": "0.9%",
+      "fair": "90%+",
+      "reason": "DOGE has already cut billions publicly",
+      "volume": 1677.3305099999998,
+      "bet": "YES",
+      "expectedReturn": "10426%"
+    },
+    {
+      "type": "OVERPRICED",
+      "question": "Will Harvey Weinstein be sentenced to no prison time?",
+      "current": "44.9%",
+      "fair": "<5%",
+      "reason": "Already convicted, will definitely go to prison",
+      "volume": 702.038783,
+      "bet": "NO",
+      "expectedReturn": "123%"
+    }
+  ],
+  "opportunities": [
+    {
+      "type": "INEFFICIENT",
+      "topic": "NBA Finals 2026",
+      "sum": "4506.5%",
+      "expected": "100%",
+      "markets": 644
+    }
+  ]
+}

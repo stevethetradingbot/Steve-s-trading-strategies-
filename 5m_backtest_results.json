@@ -1,0 +1,316 @@
+{
+  "timestamp": "2026-02-17T16:07:08.944Z",
+  "dataPoints": 721,
+  "timeRange": {
+    "start": 1771344300,
+    "end": 1771128300
+  },
+  "results": [
+    {
+      "strategy": "SMA(12/56)",
+      "config": {
+        "fast": 12,
+        "slow": 56,
+        "sl": 1,
+        "tp": 2
+      },
+      "trades": 18,
+      "wins": 4,
+      "losses": 5,
+      "winRate": 44.44444444444444,
+      "finalCapital": 1029.9139080119164,
+      "totalReturn": "2.99%"
+    },
+    {
+      "strategy": "SMA(24/56)",
+      "config": {
+        "fast": 24,
+        "slow": 56,
+        "sl": 1,
+        "tp": 2
+      },
+      "trades": 12,
+      "wins": 4,
+      "losses": 2,
+      "winRate": 66.66666666666666,
+      "finalCapital": 1027.025411653636,
+      "totalReturn": "2.70%"
+    },
+    {
+      "strategy": "SMA(12/56)",
+      "config": {
+        "fast": 12,
+        "slow": 56,
+        "sl": 0.5,
+        "tp": 1
+      },
+      "trades": 18,
+      "wins": 4,
+      "losses": 5,
+      "winRate": 44.44444444444444,
+      "finalCapital": 1019.2858784678654,
+      "totalReturn": "1.93%"
+    },
+    {
+      "strategy": "SMA(24/56)",
+      "config": {
+        "fast": 24,
+        "slow": 56,
+        "sl": 2,
+        "tp": 4
+      },
+      "trades": 12,
+      "wins": 4,
+      "losses": 2,
+      "winRate": 66.66666666666666,
+      "finalCapital": 1010.5794640831051,
+      "totalReturn": "1.06%"
+    },
+    {
+      "strategy": "SMA(24/56)",
+      "config": {
+        "fast": 24,
+        "slow": 56,
+        "sl": 0.5,
+        "tp": 1
+      },
+      "trades": 12,
+      "wins": 4,
+      "losses": 2,
+      "winRate": 66.66666666666666,
+      "finalCapital": 1008.42608060681,
+      "totalReturn": "0.84%"
+    },
+    {
+      "strategy": "SMA(12/56)",
+      "config": {
+        "fast": 12,
+        "slow": 56,
+        "sl": 2,
+        "tp": 4
+      },
+      "trades": 18,
+      "wins": 3,
+      "losses": 6,
+      "winRate": 33.33333333333333,
+      "finalCapital": 1004.4741111684498,
+      "totalReturn": "0.45%"
+    },
+    {
+      "strategy": "SMA(12/26)",
+      "config": {
+        "fast": 12,
+        "slow": 26,
+        "sl": 1,
+        "tp": 2
+      },
+      "trades": 30,
+      "wins": 5,
+      "losses": 10,
+      "winRate": 33.33333333333333,
+      "finalCapital": 1004.3617127285203,
+      "totalReturn": "0.44%"
+    },
+    {
+      "strategy": "SMA(24/26)",
+      "config": {
+        "fast": 24,
+        "slow": 26,
+        "sl": 1,
+        "tp": 2
+      },
+      "trades": 47,
+      "wins": 10,
+      "losses": 13,
+      "winRate": 43.47826086956522,
+      "finalCapital": 1001.6541861773626,
+      "totalReturn": "0.17%"
+    },
+    {
+      "strategy": "SMA(12/26)",
+      "config": {
+        "fast": 12,
+        "slow": 26,
+        "sl": 2,
+        "tp": 4
+      },
+      "trades": 30,
+      "wins": 5,
+      "losses": 10,
+      "winRate": 33.33333333333333,
+      "finalCapital": 988.9513929045083,
+      "totalReturn": "-1.10%"
+    },
+    {
+      "strategy": "SMA(24/26)",
+      "config": {
+        "fast": 24,
+        "slow": 26,
+        "sl": 2,
+        "tp": 4
+      },
+      "trades": 47,
+      "wins": 10,
+      "losses": 13,
+      "winRate": 43.47826086956522,
+      "finalCapital": 986.3935566430263,
+      "totalReturn": "-1.36%"
+    },
+    {
+      "strategy": "SMA(12/26)",
+      "config": {
+        "fast": 12,
+        "slow": 26,
+        "sl": 0.5,
+        "tp": 1
+      },
+      "trades": 30,
+      "wins": 4,
+      "losses": 11,
+      "winRate": 26.666666666666668,
+      "finalCapital": 982.6021694135311,
+      "totalReturn": "-1.74%"
+    },
+    {
+      "strategy": "SMA(24/26)",
+      "config": {
+        "fast": 24,
+        "slow": 26,
+        "sl": 0.5,
+        "tp": 1
+      },
+      "trades": 47,
+      "wins": 9,
+      "losses": 14,
+      "winRate": 39.130434782608695,
+      "finalCapital": 982.1268887921658,
+      "totalReturn": "-1.79%"
+    },
+    {
+      "strategy": "PSAR(0.01)",
+      "config": {
+        "af": 0.01,
+        "sl": 0.5,
+        "tp": 1
+      },
+      "trades": 31,
+      "wins": 4,
+      "losses": 11,
+      "winRate": 26.666666666666668,
+      "finalCapital": 961.657924010459,
+      "totalReturn": "-3.83%"
+    },
+    {
+      "strategy": "PSAR(0.01)",
+      "config": {
+        "af": 0.01,
+        "sl": 1,
+        "tp": 2
+      },
+      "trades": 31,
+      "wins": 4,
+      "losses": 11,
+      "winRate": 26.666666666666668,
+      "finalCapital": 948.7346565350682,
+      "totalReturn": "-5.13%"
+    },
+    {
+      "strategy": "PSAR(0.01)",
+      "config": {
+        "af": 0.01,
+        "sl": 2,
+        "tp": 4
+      },
+      "trades": 31,
+      "wins": 4,
+      "losses": 11,
+      "winRate": 26.666666666666668,
+      "finalCapital": 948.7346565350682,
+      "totalReturn": "-5.13%"
+    },
+    {
+      "strategy": "PSAR(0.02)",
+      "config": {
+        "af": 0.02,
+        "sl": 0.5,
+        "tp": 1
+      },
+      "trades": 57,
+      "wins": 7,
+      "losses": 21,
+      "winRate": 25,
+      "finalCapital": 933.8079868279164,
+      "totalReturn": "-6.62%"
+    },
+    {
+      "strategy": "PSAR(0.02)",
+      "config": {
+        "af": 0.02,
+        "sl": 1,
+        "tp": 2
+      },
+      "trades": 57,
+      "wins": 7,
+      "losses": 21,
+      "winRate": 25,
+      "finalCapital": 920.4736676653273,
+      "totalReturn": "-7.95%"
+    },
+    {
+      "strategy": "PSAR(0.02)",
+      "config": {
+        "af": 0.02,
+        "sl": 2,
+        "tp": 4
+      },
+      "trades": 57,
+      "wins": 7,
+      "losses": 21,
+      "winRate": 25,
+      "finalCapital": 916.411188863978,
+      "totalReturn": "-8.36%"
+    },
+    {
+      "strategy": "PSAR(0.05)",
+      "config": {
+        "af": 0.05,
+        "sl": 0.5,
+        "tp": 1
+      },
+      "trades": 105,
+      "wins": 5,
+      "losses": 47,
+      "winRate": 9.615384615384617,
+      "finalCapital": 867.8784575237314,
+      "totalReturn": "-13.21%"
+    },
+    {
+      "strategy": "PSAR(0.05)",
+      "config": {
+        "af": 0.05,
+        "sl": 1,
+        "tp": 2
+      },
+      "trades": 105,
+      "wins": 5,
+      "losses": 47,
+      "winRate": 9.615384615384617,
+      "finalCapital": 859.29091622982,
+      "totalReturn": "-14.07%"
+    },
+    {
+      "strategy": "PSAR(0.05)",
+      "config": {
+        "af": 0.05,
+        "sl": 2,
+        "tp": 4
+      },
+      "trades": 105,
+      "wins": 5,
+      "losses": 47,
+      "winRate": 9.615384615384617,
+      "finalCapital": 854.3976478317485,
+      "totalReturn": "-14.56%"
+    }
+  ]
+}

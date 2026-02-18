@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-02-18T04:48:43.114Z",
+  "config": {
+    "SL_PCT": 3,
+    "TP_PCT": 6,
+    "TRAIL_PCT": 3,
+    "INITIAL_CAPITAL": 1000,
+    "POSITION_SIZE": 100
+  },
+  "results": [
+    {
+      "symbol": "ETH",
+      "trades": 7,
+      "wins": 4,
+      "losses": 3,
+      "winRate": 57.14285714285714,
+      "returnPct": 1.822485877258964,
+      "finalCapital": 1018.2248587725896
+    },
+    {
+      "symbol": "BTC",
+      "trades": 6,
+      "wins": 3,
+      "losses": 3,
+      "winRate": 50,
+      "returnPct": 1.0088575894356382,
+      "finalCapital": 1010.0885758943564
+    },
+    {
+      "symbol": "ARB",
+      "trades": 9,
+      "wins": 4,
+      "losses": 5,
+      "winRate": 44.44444444444444,
+      "returnPct": 1.3624436736080496,
+      "finalCapital": 1013.6244367360805
+    },
+    {
+      "symbol": "SOL",
+      "trades": 8,
+      "wins": 4,
+      "losses": 4,
+      "winRate": 50,
+      "returnPct": 1.4112805552753456,
+      "finalCapital": 1014.1128055527535
+    },
+    {
+      "symbol": "NEAR",
+      "trades": 9,
+      "wins": 4,
+      "losses": 5,
+      "winRate": 44.44444444444444,
+      "returnPct": 0.9616229728483062,
+      "finalCapital": 1009.6162297284831
+    }
+  ]
+}
